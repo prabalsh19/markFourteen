@@ -26,7 +26,7 @@ const onSubmitHandler = ()=>{
     }else if(difference < 0){
         err.innerText=''
 
-        result.innerText ="Whoops!! Your loss is "+difference+ " and loss Percentage is "+percentage+":("
+        result.innerText ="Whoops!! Your loss is "+Math.abs(difference)+ " and loss Percentage is "+Math.abs(percentage)+"% :("
         result.style.color = "red"
 
     }else{
