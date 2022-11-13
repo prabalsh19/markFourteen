@@ -21,12 +21,12 @@ const onSubmitHandler = ()=>{
     }
     else if(difference > 0){
         err.innerText=''
-        result.innerText = "Yay!! Your Profit is "+difference+ " and profit Percentage is "+percentage+ "🥳"
+        result.innerText = "Yay!! Your Profit is "+difference+ " and profit Percentage is "+percentage.toFixed(2)+ " 🥳"
         result.style.color = "white"
     }else if(difference < 0){
         err.innerText=''
 
-        result.innerText ="Whoops!! Your loss is "+difference+ " and loss Percentage is "+percentage+":("
+        result.innerText ="Whoops!! Your loss is "+difference+ " and loss Percentage is "+percentage.toFixed(2)+" :("
         result.style.color = "red"
 
     }else{
